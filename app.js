@@ -25,3 +25,43 @@ boogerButton.addEventListener('click', () => {
     // update the textContent of the span
     boogerSpan.textContent = sum;
 });
+
+
+const subtractInput1 = document.querySelector('#subtractInput1');
+const subtractInput2 = document.querySelector('#subtractInput2');
+const subtractButton = document.querySelector('#subtractButton');
+const subtractResult = document.querySelector('#subtractResult');
+
+subtractButton.addEventListener('click', () => {
+    const value1 = subtractInput1.value;
+    const value2 = subtractInput2.value;
+    const sum = Number(value1) - Number(value2);
+    subtractResult.textContent = sum;
+
+})
+
+const multiplyInput1 = document.querySelector('#multiplyInput1');
+const multiplyInput2 = document.querySelector('#multiplyInput2');
+const multiplyButton = document.querySelector('#multiplyButton');
+const multiplyResult = document.querySelector('#multiplyResult');
+
+multiplyButton.addEventListener('click', () => {
+    let value1 = multiplyInput1.value;
+    const value2 = multiplyInput2.value;
+    const sum = Number(value1) * Number(value2)
+    multiplyResult.textContent = sum;
+})
+
+const divideInput1 = document.querySelector('#divideInput1')
+const divideInput2 = document.querySelector('#divideInput2')
+const divideButton = document.querySelector('#divideButton')
+const divideResult = document.querySelector('#divideResult')
+
+divideButton.addEventListener('click', () => {
+    let value1 = divideInput1.value;
+    let value2 = divideInput2.value;
+    const sum = Number(value1) / Number(value2);
+    divideResult.textContent = sum;
+
+
+})
