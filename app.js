@@ -1,3 +1,8 @@
+import {doIt} from './utils.js';
+
+let test = doIt( 1 , 2 , '+')
+console.log(test);
+
 // get dom elements
 // get add-input-1
 const addInput1 = document.getElementById('add-input-1');
@@ -20,7 +25,7 @@ boogerButton.addEventListener('click', () => {
     const value2 = addInput2.value;
 
     // add the two values together
-    const sum = Number(value1) + Number(value2);
+    add(value1, value2, '+')
 
     // update the textContent of the span
     boogerSpan.textContent = sum;
