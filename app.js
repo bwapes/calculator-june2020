@@ -25,7 +25,7 @@ boogerButton.addEventListener('click', () => {
     const value2 = addInput2.value;
 
     // add the two values together
-    add(value1, value2, '+')
+    let sum = doIt(value1, value2, '+')
 
     // update the textContent of the span
     boogerSpan.textContent = sum;
@@ -40,7 +40,7 @@ const subtractResult = document.querySelector('#subtractResult');
 subtractButton.addEventListener('click', () => {
     const value1 = subtractInput1.value;
     const value2 = subtractInput2.value;
-    const sum = Number(value1) - Number(value2);
+    let sum = doIt(value1, value2, '-')
     subtractResult.textContent = sum;
 
 })
@@ -53,7 +53,7 @@ const multiplyResult = document.querySelector('#multiplyResult');
 multiplyButton.addEventListener('click', () => {
     let value1 = multiplyInput1.value;
     const value2 = multiplyInput2.value;
-    const sum = Number(value1) * Number(value2)
+    let sum = doIt(value1, value2, '*')
     multiplyResult.textContent = sum;
 })
 
@@ -65,8 +65,6 @@ const divideResult = document.querySelector('#divideResult')
 divideButton.addEventListener('click', () => {
     let value1 = divideInput1.value;
     let value2 = divideInput2.value;
-    const sum = Number(value1) / Number(value2);
+    let sum = doIt(value1, value2, '/')
     divideResult.textContent = sum;
-
-
 })
